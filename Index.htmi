@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AA Diet Food Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🔹 NAVIGATION MENU -->
+  <nav>
+    <h2>AA Fitness</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#analyzer">Analyzer</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔹 HOMEPAGE INTRO SECTION -->
+  <section class="hero">
+    <h1>Welcome to AA Diet Food Analyzer</h1>
+    <p>
+      Track your food, analyze nutrition, and improve your health daily.
+    </p>
+    <a href="#analyzer" class="btn">Start Now</a>
+  </section>
+
+  <!-- 🔹 ANALYZER SECTION -->
+  <section id="analyzer" class="container">
+    <h2>Analyze Your Food</h2>
+
+    <form id="foodForm">
+      <input type="text" id="username" placeholder="Enter your name" required>
+
+      <select id="food" required>
+        <option value="">Select Food</option>
+        <option value="apple">Apple</option>
+        <option value="pizza">Pizza</option>
+        <option value="burger">Burger</option>
+        <option value="salad">Salad</option>
+      </select>
+
+      <input type="number" id="quantity" value="1" min="1">
+
+      <button type="submit">Analyze</button>
+    </form>
+
+    <div id="resultBox" class="result"></div>
+  </section>
+
+  <!-- 🔹 ABOUT SECTION -->
+  <section id="about" class="about">
+    <h2>About This App</h2>
+    <p>
+      AA Diet Food Analyzer is a simple web application that helps users
+      track their daily food intake and understand nutritional values.
+    </p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
